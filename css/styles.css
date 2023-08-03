@@ -1,0 +1,23 @@
+body {
+    font-family: 'Merriweather', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.inner_content {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 28px;
+}
