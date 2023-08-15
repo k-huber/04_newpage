@@ -12,6 +12,15 @@ body {
     line-height: 1.8;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 20px;
+}
+
 h1 {
     font-size: 38px;
 }
@@ -31,6 +40,10 @@ a {
 
 a:hover {
     color: var(--earth-yellow);
+}
+
+img {
+    width: 100%;
 }
 
 label {
@@ -59,13 +72,22 @@ input:valid:not([type=submit]) {
     border-color: var(--form-valid);
 }
 
-input[type="submit"] {
-    background-color: var(--earth-yellow);
+input[type="submit"],
+.btn {
     border: none;
     color: var(--white);
     font-size: 16px;
     padding: 10px 20px;
     margin-top: 10px;
+    background-image: linear-gradient(to right, var(--tigers-eye), var(--tigers-eye) 50%, var(--earth-yellow) 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover,
+.btn:hover {
+    color: var(--white);
 }
 
 header {
@@ -89,6 +111,8 @@ header a {
     transition: all 0.3s ease-in-out;
 }
 
+input[type="submit"]:hover,
+.btn:hover,
 header a:hover {
     background-position: 0%;
 }
@@ -119,8 +143,9 @@ main p {
     gap: 40px;
 }
 
-.column {
-    flex: 1;
+.columns-3 .column {
+    flex: 1 1 0px;
+    width: 0;
 }
 
 form {
@@ -134,6 +159,25 @@ form {
 .submit {
     justify-self: end;
     align-self: end;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.card .image {
+    max-height: 250px;
+    margin-bottom: 20px;
+}
+
+.card .description {
+    padding: 0 20px;
+}
+
+.card .btn {
+    display: block;
 }
 
 footer {
