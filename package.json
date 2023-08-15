@@ -1,0 +1,14 @@
+{
+    "name": "mein-projekt",
+    "version": "1.0.0",
+    "description": "Eine kurze Beschreibung deines Projekts",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "author": "Dein Name",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}
