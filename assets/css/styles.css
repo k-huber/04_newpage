@@ -180,6 +180,11 @@ form {
     display: block;
 }
 
+.swiper {
+    width: 600px;
+    height: 300px;
+}
+
 footer {
     background-color: var(--pakistan-green);
     padding: 20px 50px;
@@ -187,4 +192,8 @@ footer {
 
 footer * {
     color: var(--white);
+}
+
+.text-visible {
+    display: block;
 }

@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Neue Seite</title>
+    <title>BMI Rechner</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="assets/js/slider.js"></script>
+    <script async type="module" src="index.js"></script>
+    <script async type="module" src="./assets/js/bmi.js"></script>
 </head>
 
 <body>
@@ -17,26 +18,27 @@
         <ul class="mainnav">
             <li><a href="slider.html" title="Slider">Slider</a></li>
             <li><a href="cards.html" title="Cards">Cards</a></li>
+            <li><a href="bmi.html" title="Cards">BMI Rechner</a></li>
         </ul>
     </header>
 
     <main>
         <div class="inner_content">
-            <h1>Erste Überschrift.</h1>
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"> <img src="assets/img/plant-2004483_1280.jpg" alt="Plant" /></div>
-                    <div class="swiper-slide"> <img src="assets/img/plant-2004483_1280.jpg" alt="Plant" /></div>
-                    <div class="swiper-slide"> <img src="assets/img/plant-2004483_1280.jpg" alt="Plant" /></div>
+            <h1>BMI Rechner</h1>
+            <form>
+                <div class="field">
+                    <label for="weight">Gewicht (in kg)</label>
+                    <input id="weight" type="number" name="weight" required />
                 </div>
-
-                <div class="swiper-pagination"></div>
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-                <div class="swiper-scrollbar"></div>
-            </div>
+                <div class="field">
+                    <label for="height">Größe (in Meter)</label>
+                    <input id="height" type="number" name="height" required />
+                </div>
+                <div class="field submit">
+                    <input id="submit" type="submit" value="berechnen" />
+                </div>
+                <div id="result"></div>
+            </form>
         </div>
     </main>
 
